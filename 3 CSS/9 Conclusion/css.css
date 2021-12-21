@@ -1,0 +1,91 @@
+#nav{
+    display: flex;
+    background-color: lightpink;
+    border: magenta;
+    border-style: solid;
+    padding-left: 20px;
+}
+#form{
+    background-color: lightyellow;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#input{
+    display: flex;
+    flex-direction: column;
+}
+#formbackground{
+    width: 50%;
+    height: 100%;
+    background-color: lightgreen;
+    padding-top: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#mapbackground{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-color: lightblue;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.menubutton{
+    width: 70%;
+    background-color: lightyellow;
+    text-align: center;
+    margin: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: black;
+    border-style: solid;
+}
+#firstrow{
+    display: flex;
+}
+#secondrow{
+    display: flex;
+}
+#cards{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    background-color: lightyellow;
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    border: darkgreen;
+    border-style: solid;
+}
+#leftmenu{
+    background-color: lightskyblue;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+#main{
+    padding-top: 30%;
+    text-align: center;
+}
+#pages{
+    margin-left: auto;
+}
+.lightgrey{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: lightgray;
+    border: darkgrey;
+    border-style: solid;
+}
+#pages{
+    display: flex;
+}

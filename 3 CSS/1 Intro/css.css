@@ -1,0 +1,48 @@
+
+*{/*Universal selector.*/
+    color: white;
+}
+
+h1,h2{/*Type selector.*/
+    color: rgb(255,255,255);
+}
+
+.class{/*Class selector.*/
+    color: black;
+}
+
+p.class{/*Type Class selector.*/
+    color: blue;
+}
+
+#paragpaph1{/*ID selector.*/
+    color: chartreuse;
+}
+
+#paragpaph1{/*Last rule.*/
+    color: darkgreen;
+}
+
+li>a{/*Child selector*/
+    color: yellow;
+}
+
+p a{/*Descendant selector*/
+    color: red;
+}
+
+h1+p{/*Adjacent sibling selector.*/
+    color: sandybrown;
+}
+
+h1~p{/*General sibling selector.*/
+    color: purple;
+}
+
+p{
+    color: aqua;
+}
+
+h3{
+    color: inherit;
+}

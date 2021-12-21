@@ -1,0 +1,174 @@
+<html>
+    <head>
+        <title>Animations</title>
+        <style>
+            .box{
+                float: left;
+                width: 400px;
+                height: 100px;
+                text-align: center;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .circle{
+                float: left;
+                margin-left: 20px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+            }
+            .white{
+                background-color: white;
+            }
+            .red{
+                background-color: #E84C3C;
+            }
+            .darkred{
+                background-color: #DD4838;
+            }
+            .lightred{
+                background-color: #E36D61;
+            }
+            #lightred{
+                position: absolute;
+                margin-left: 125px;
+                width: 150px;
+                height: 24px;
+                background-color: #EC7163;
+            }
+            #lightred2{
+                position: absolute;
+                margin-left: 175px;
+                width: 50px;
+                height: 50px;
+                background-color: #EC7163;
+            }
+            #lightred1{
+                position: absolute;
+                margin-left: 150px;
+                margin-top: 3px;
+                width: 100px;
+                height: 18px;
+                background-color: #EC7163;
+                z-index: 100 !important;
+            }
+            #loading1{
+                position: absolute;
+                margin-left: 150px;
+                width: 0px;
+                height: 24px;
+                background-color: white;
+                animation: fill1 5s infinite;
+                z-index: 100 !important;
+            }
+            #loading2{
+                position: absolute;
+                margin-left: 125px;
+                width: 0px;
+                height: 24px;
+                background-color: white;
+                animation: fill 5s infinite;
+                z-index: 100 !important;
+            }
+            @keyframes fill1 {
+                from {width: 0px;}
+                to {width: 100px;}
+            }
+            @keyframes fill {
+                from {width: 0px;}
+                to {width: 150px;}
+            }
+            @keyframes fill2 {
+                from {width: 0px;}
+                to {width: 50px;}
+            }
+            @keyframes circle1 {
+                0%{left: 550px;top: 115px;}
+                25%{left: 615px;top: 115px;}
+                50%{left: 615px;top: 175px;}
+                75%{left: 550px;top: 175px;}
+            }
+            @keyframes xAxis1 {
+                20% {transform: translateX(0px);}
+                50% {transform: translateX(30px);animation-timing-function: ease-out;}
+                100% {transform: translateX(60px);}
+            }
+            @keyframes yAxis1 {
+                20% {transform: translateY(0px);}
+                50% {transform: translateY(-30px);animation-timing-function: ease-in;}
+                100% {transform: translateY(0px);}
+            }
+            @keyframes xAxis2 {
+                20% {transform: translateX(0px);}
+                50% {transform: translateX(-30px);animation-timing-function: ease-out;}
+                100% {transform: translateX(-60px);}
+            }
+            @keyframes yAxis2 {
+                20% {transform: translateY(0px);}
+                50% {transform: translateY(30px);animation-timing-function: ease-in;}
+                100% {transform: translateY(0px);}
+            }
+            #animate1{
+                margin-top: 40px;
+                margin-left: 143px;
+            }
+            #animate2{
+                position: absolute;
+                margin-left: 175px;
+                width: 0px;
+                height: 50px;
+                background-color: white;
+                animation: fill2 5s infinite;
+                z-index: 100 !important;
+            }
+            #circle2{
+                position: absolute;
+                left: 550px;
+                top: 115px;
+                animation: circle1 2s infinite;
+            }
+            #circle1{
+                animation: xAxis1 1s infinite;
+            }
+            #circle1parent{
+                animation: yAxis1 1s infinite;
+            }
+            #circle3{
+                animation: xAxis2 1s infinite;
+            }
+            #circle3parent{
+                animation: yAxis2 1s infinite;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="darkred box"><br><br>
+                <div id="loading1"></div>
+                <div id="lightred1">LOADING...</div>
+            </div>
+            <div class="red box"><br><br>
+                <div id="loading2"></div>
+                <div id="lightred">LOADING...</div>
+            </div>
+        </div>
+        <div style="width: 800px;">
+            <div class="red box">
+                <div id="animate1">
+                    <div id="circle1parent">
+                        <div id="circle1"class="lightred circle"></div>
+                    </div>
+                    <div class="white circle"></div>
+                    <div id="circle3parent">
+                        <div id="circle3"class="lightred circle"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="darkred box"><br>
+                <div id="circle2"class="white circle"></div>
+                <div id="animate2"></div>
+                <div id="lightred2"></div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head><title>Form</title></head>
+    <body>
+        <form action="">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" ><br><br>
+            <label for="password">Password: </label>
+            <input required type="password" id="password"><br><br>
+            Gender:
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label><br><br>
+            <label for="continent">Continent: </label>
+            <select name="continent" id="continent">
+                <option value="Europe">Europe</option>
+                <option value="Asia">Asia</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Africa">Africa</option>
+                <option value="Australia">Australia</option>
+                <option value="Antartica">Antartica</option>
+            </select><br><br>
+            Meals:
+            <input type="checkbox" name="egs" value="egs" id="egs" >
+            <label for="egs">Egs</label><br>
+            <input type="checkbox" name="bacon" value="bacon" id="bacon" >
+            <label for="bacon">Bacon</label><br><br>
+            <label for="remarks">Remarks: </label>
+            <textarea name="remarks" id="remarks" cols="30" rows="2"></textarea><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Cancel" >
+        </form>
+    </body>
+</html>

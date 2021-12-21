@@ -1,0 +1,66 @@
+<html>
+    <head><title>Фрагмент Нарачка</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="blur">  
+            <ul>
+                <img height="50px" src="images/icon.jpeg" alt="Logo">
+                <li><a href="#"><h1>Фрагмент Комуникации</h1></a></li>
+                <li><a href="index.html"><h2>Дома</h2></a></li>   
+                <li><a href="Projects.html"><h2>Опрема</h2></a></li>   
+                <li><a href="Contact.html"><h2>Контакт</h2></a></li>
+                <li><a href="Order.html"><h2>Нарачај настан</h2></a></li>  
+            </ul>
+            <form action="" method="get">
+                <label for="search">Пребарај: </label>
+                <input type="search" name="search" placeholder="пребарувај" 
+                id="search" />
+                <input type="submit"value="Барај!"/><br><br>
+            </form>
+        </nav>
+        <header class="shade"><br><h2>Опис на настанот:</h2><br><br></header>
+        <form class="shade"id="order"method="get">
+            <main>
+                <input required type="text"name="name"placeholder="Име на настанот:"><br>
+                <br><input required type="number"name="guests"placeholder="Број на гости:"><br>
+                <br><input required type="number"name="speakers"placeholder="Број на говорници:"><br>
+            </main>
+            <br><label for="begining">Почеток на настанот: </label>
+            <input required id="beginingtime"type="time"name="beginingtime">
+            <input required id="begining"type="date"name="begining"><br>
+            <br><label for="end">Крај на настанот: </label>
+            <input required id="endtime"type="time"name="endtime">
+            <input required id="end"type="date"name="end"><br>
+            <br><input required type="number"name="numer_languages"placeholder="Број на јазици:"><br>
+            <br><label for="languages">Јазици: </label>
+	        <select name="languages"id="languages"size="7"multiple="multiple">
+                <option value="Macedonian"selected>Македонски</option>
+                <option value="English"selected>Англиски</option>
+                <option value="Albanian">Албански</option>
+                <option value="Serbian">Србски</option>
+                <option value="French">Француски</option>
+                <option value="Montenegrin ">Црногорски</option>
+                <option value="Bosnian">Босански</option>
+	        </select>
+            <br><br><label for="place">Место: </label>
+	        <select name="place"id="place"size="2"multiple="multiple">
+                <option value="physical"selected>Физичко Присуство</option>
+                <option value="online">Онлајн</option>
+	        </select>
+            <br><br><label for="platform">Платформа: </label>
+	        <select name="platform"id="platform"size="2">
+                <option value="zoom">Zoom</option>
+                <option value="kudo">Kudo</option>
+	        </select>
+            <br><br><label for="data">Запис од настанот: </label>
+            <select name="data"id="data"size="2"multiple="multiple">
+                <option value="audio">Аудио</option>
+                <option value="video">Видео</option>
+	        </select><br><br>
+            <textarea placeholder="Дополнителен опис на настанот:"name="description"rows="5"cols="70"></textarea>
+            <br><br><input required type="text"name="contact"placeholder="Ваш контакт:">
+            <br><br><br><input type="submit"value="Нарачај го настанот!">
+        </form>
+    </body>
+</html>

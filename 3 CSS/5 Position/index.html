@@ -1,0 +1,45 @@
+<html>
+    <head><title>Positioning</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .box {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                background: red;
+                color: white;
+            } 
+            #two {
+                position: relative;
+                top: 20px;
+                left: 20px;
+                background: blue;
+            }
+            div.relative {
+                position: relative;
+                width: 400px;
+                height: 200px;
+                border: 3px solid #73AD21;
+            }     
+            div.absolute {
+                position: absolute;
+                top: 80px;
+                right: 0;
+                width: 200px;
+                height: 100px;
+                border: 3px solid #73AD21;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box" id="one">One</div>
+        <div class="box" id="two">Two</div>
+        <div class="box" id="three">Three</div>
+        <div class="box" id="four">Four</div>
+        <div class="relative">This div element has position: relative;
+            <div class="absolute">This div element has position: absolute;</div>
+        </div>
+    </body>
+</html>

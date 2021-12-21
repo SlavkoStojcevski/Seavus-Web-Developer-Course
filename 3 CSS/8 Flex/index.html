@@ -1,0 +1,32 @@
+<html>
+    <head><title>Flex</title>
+        <style>
+            .big_box{
+                display: flex;
+                flex-direction: row-reverse;
+                flex-wrap: wrap;
+                flex-flow: row wrap;
+                align-items: flex-end;
+                justify-content: flex-end;
+            }
+            .red{
+                background-color: red;
+                flex-shrink: 30px;
+                flex-basis: 0;
+            }
+            .yellow{
+                background-color: yellow;
+            }
+            .green{
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="big_box">
+            <div class="red"><h1>Random content 1</h1></div>
+            <div class="yellow"><h1>Random content 2</h1></div>
+            <div class="green"><h1>Random content 3</h1></div>
+        </div>
+    </body>
+</html>

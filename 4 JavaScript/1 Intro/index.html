@@ -1,0 +1,14 @@
+<html>
+    <head><title>Circle</title></head>
+    <body>
+        <input type="number"id="r"placeholder=Radius:>
+        <p id="result"></p>
+        <button onclick="calculate()">Calculate</button>
+    </body>
+</html>
+<script>
+    function calculate(){
+        var radius=document.getElementById("r").value;
+        document.getElementById("result").innerHTML=radius*radius*3.14;
+    }
+</script>

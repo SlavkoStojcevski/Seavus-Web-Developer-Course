@@ -1,0 +1,63 @@
+<html>
+    <head><title>Tables and Layout</title></head>
+    <body>
+        <header>Tables and Layout
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <form action="" method="" >
+                    <label for="search">Search: </label>
+                    <input type="search" name="search" placeholder="Search anything" id="search" >
+                    <input type="submit" value="Go!" >
+                </form>
+            </nav>
+        </header>
+        <main>
+            Excercise about Tables and Layout.
+            <aside>Some aditional info.</aside>
+        </main>
+        <article>
+            <section>The "article" element encloses a block of related content that makes sense</section>
+            <section>on its own without the rest of the page (e.g., a single blog post)</section>
+        </article>
+        <div>The "div" element is used when the content has no semantic value, always starts on a new line and takes the whole width of a webpage.</div>
+        <span>The "span" element is an inline non-semantic element, starts on the same line and takes as much space as it needs.</span>
+        <table border="5px" cellpadding="5" cellspacing="10" >
+            <caption>Schedule</caption>
+            <thead>
+                <th>Header</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Schedule</th>
+                    <th>9am</th>
+                    <th>10am</th>
+                    <th>11am</th>
+                </tr>
+                <tr>
+                    <th>Monday</th>
+                    <td style="background-color: red;">Row 1, Colum 1</td>
+                    <td rowspan="2">Row 1/2, Colum 2</td>
+                    <td>Row 1, Colum 3</td>
+                </tr>
+                <tr>
+                    <th>Tuesday</th>
+                    <td>Row 2, Colum 1</td>
+                    <td>Row 2, Colum 3</td>
+                </tr>
+                <tr>
+                    <th>Wednesday</th>
+                    <td>Row 3, Colum 1</td>
+                    <td colspan="2">Row 3, Colum 2/3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th>Footer</th>
+            </tfoot>
+        </table>
+    </body>
+    <footer>Made by Slavko Stojchevski</footer>
+</html>

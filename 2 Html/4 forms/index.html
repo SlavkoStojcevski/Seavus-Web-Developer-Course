@@ -1,0 +1,68 @@
+<html>
+    <head><title>Forms</title></head>
+    <body>
+        <form action=""method="GET">
+            <fieldset>
+                <label for="name">Name:</label>
+                <input type="text"name="name"id="name"><br><br>
+
+                <label for="email">Email: </label>
+                <input type="email" ><br><br>
+
+                <label for="password">Password: </label>
+                <input required placeholder="strong pass please" type="password"name="password"id="password">
+            </fieldset>
+            
+            <br><br><label for="coment">Coment:</label>
+            <textarea name="coment" id="coment" cols="30" rows="2"></textarea><br><br>
+
+            <input type="radio"name="number"value="1"id="1">
+            <label for="1">1</label><br>
+
+            <input type="radio"name="number"value="2"id="2">
+            <label for="2">2</label><br>
+
+            <input type="radio"name="number"value="3"id="3">
+            <label for="3">3</label><br><br>
+
+            <input checked type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+
+            <input type="checkbox"id="vehicle2"name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a bike</label><br><br>
+
+            <label for="spot">What spot did you finished?</label>
+            <select name="spot"id="spot">
+                <option value="1st" selected>1st</option>
+                <option value="2nd">2nd</option>
+            </select><br><br>
+
+            <label for="instruments">Do you play any of the following instruments?</label>
+            <select name="instruments" id="instruments" size="3" multiple="multiple">
+                <option value="guitar" selected>
+                Guitar</option>
+                <option value="drums">Drums</option>
+                <option value="keyboard"
+                selected="selected">Keyboard</option>
+                <option value="bass">Bass</option>
+            </select><br><br>
+
+            <label for="music">Upload music: </label>
+            <input name="music"id="music"type="file"><br><br>
+
+            <input type="hidden"id="transparent"name="transparent"value="7">
+
+            <label for="birth">Date of birth: </label>
+            <input id="birth" name="birth" type="date"><br><br>
+
+            <label for="link">Link: </label>
+            <input type="url" id="link" name="url"><br><br>
+
+            <label for="search">Search: </label>
+            <input type="search" id="search" name="search"><br><br>
+
+            <input type="submit"value="Submit">
+            <input type="reset"value="Reset form">
+        </form>
+    </body>
+</html>
