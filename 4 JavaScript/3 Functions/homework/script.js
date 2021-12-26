@@ -1,9 +1,9 @@
-function type(variable){
-    console.log(typeof(variable));
+function type(variable) {
+  console.log(typeof variable);
 }
 var someObject = {
-    foo: "This", 
-    bar: "works!"
+  foo: "This",
+  bar: "works!",
 };
 type(someObject);
 type(true);
