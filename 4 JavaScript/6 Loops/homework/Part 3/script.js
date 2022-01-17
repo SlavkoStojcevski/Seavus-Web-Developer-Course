@@ -1,5 +1,6 @@
 function minMaxSum(list) {
   let min = list[0];
+  let max = list[0];
   for (let n of list) {
     if (n < min) {
       min = n;
