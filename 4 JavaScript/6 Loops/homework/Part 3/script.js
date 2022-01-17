@@ -4,9 +4,6 @@ function minMaxSum(list) {
     if (n < min) {
       min = n;
     }
-  }
-  let max = list[0];
-  for (let n of list) {
     if (n > max) {
       max = n;
     }
