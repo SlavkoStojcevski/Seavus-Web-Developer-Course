@@ -10,6 +10,8 @@ console.log(paragraphs); // Will give us an array with 2 paragraphs
 console.log(firstP); // Will give us the first paragraph it finds
 console.log(header); // Will give us the first header it finds*/
 let div = document.querySelector("div");
+document.body.append(document.createElement("h2"));
+document.querySelector("h2").innerText="New h2 element";
 let p = document.querySelectorAll("p");
 let alldiv = document.querySelectorAll("div");
 let ldiv = alldiv[alldiv.length-1];

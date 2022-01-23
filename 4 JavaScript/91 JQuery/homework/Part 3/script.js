@@ -1,4 +1,4 @@
-document.getElementById("enter").addEventListener("click", function () {
+document.getElementById("enter").onclick = function () {
   let reading = {
     title: document.getElementById("title").value,
     author: document.getElementById("author").value,
@@ -15,4 +15,4 @@ document.getElementById("enter").addEventListener("click", function () {
     },
   };
   reading.readingProgress();
-});
+};

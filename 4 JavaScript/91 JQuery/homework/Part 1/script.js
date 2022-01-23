@@ -1,6 +1,6 @@
 let submit = document.getElementById("submit");
-let students = [];
-submit.addEventListener("click", function () {
+let students=[];
+submit.onclick = function () {
   let student = {
     firstName: document.getElementById("firstName").value,
     lastName: document.getElementById("lastName").value,
@@ -8,4 +8,4 @@ submit.addEventListener("click", function () {
   };
   students.push(student);
   console.log(students);
-});
+};
