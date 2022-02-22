@@ -20,6 +20,6 @@ function foreach(anarray, afunction) {
   }
 }
 let array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-console.log(maps(array,n=>n*2));
-console.log(filters(array,n=>n%2==0));
+console.log(maps(array, (n) => n * 2));
+console.log(filters(array, (n) => n % 2 == 0));
 foreach(array, (n) => console.log(n));
