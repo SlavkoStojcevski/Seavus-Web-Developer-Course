@@ -9,8 +9,13 @@ $.ajax({
     let malesCanDrink = await students.filter(
       (student) => student.age > 21 && student.gender === "Male"
     );
-    let gradeSum = 0;
-    students.forEach((student) => (gradeSum += student.averageGrade));
+    let grades=[];
+    students.forEach((student) => (grades.push(student.averageGrade)));
+    const initialValue = 0;
+    const gradeSum = grades.reduce(
+      (previousValue, currentValue) => previousValue + currentValue,
+      initialValue
+    );
     let averageGrade = gradeSum / 200;
     console.log(under18);
     console.log(fullNames);
