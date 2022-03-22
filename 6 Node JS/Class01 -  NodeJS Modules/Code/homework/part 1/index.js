@@ -5,5 +5,5 @@ const i_Robot={
     bookReleaseDate: "02.12.1950",
     bookPages: 253
 };
-let printBookInfo=require("./book");
-printBookInfo.printBookInfo(i_Robot);
+const Book=require("./book");
+Book.printBookInfo(i_Robot);
